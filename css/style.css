@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+
+.todoContainer {
+    max-width: 900px;
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+    min-height: 90%;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#todoForm {
+    max-width: 90%;
+    margin: auto;
+}
+
+textarea {
+    height: 100px;
+    max-height: 500px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    resize: vertical;
+    border-radius: 5px;
+}
+
+#taskMessage_label {
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: solid black 2px;
+}
+
+button {
+    padding: 5px 15px;
+    background: transparent;
+    color: black;
+    border: none;
+    transition: 0.4s all;
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+    outline: none;
+    border-bottom: solid white 1px;
+}
+
+button:hover {
+    border-bottom: solid black 1px;
+    font-size: 18px;
+    color: green;
+}
+
+
+.todoItem_delete:hover {
+    border-bottom: solid black 1px;
+    color: red;
+}
+
+#taskList-title {
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: solid black 2px;
+    margin-top: 15px;
+}
+
+#tasksList {
+    width: 100%;
+
+}
+
+.todoItem {
+    width: 100%;
+    height: auto;
+    border-bottom: solid rgb(134, 119, 119) 1px;
+    position: relative;
+}
+
+p {
+    width: 80%;
+    margin: 0;
+    padding: 15px;
+}
+
+.todoItem_delete {
+    position: absolute;
+    bottom: 10px;
+    right: 7px;
+}
