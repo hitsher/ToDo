@@ -1,15 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
     const tasksList = document.querySelector('#tasksList');
     const todoForm = document.querySelector('#todoForm');
-
+    const textarea = this.querySelector('textarea');
+     
     todoForm.addEventListener('submit', function (e) {
         e.preventDefault();
-        const textarea = this.querySelector('textarea');
         if (textarea.value !== '') {
             addTask(textarea.value);
             textarea.value = '';
         }
     });
+
+    textarea.addEventListener("keyup", enterPressed);
+
+    function enterPressed(event) {
+
+        if (event.keyCode == 13 && !event.shiftKey) {
+            addTask(textarea.value);
+            textarea.value = '';
+        }
+    }
 
     function addTask(text) {
 
